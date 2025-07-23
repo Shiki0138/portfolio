@@ -152,9 +152,6 @@ const Footer = () => {
                 <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <span>🐦</span>
                 </SocialLink>
-                <SocialLink href="mailto:contact@example.com">
-                  <span>📧</span>
-                </SocialLink>
               </SocialLinks>
             </FooterSection>
             
@@ -177,13 +174,10 @@ const Footer = () => {
             </FooterSection>
             
             <FooterSection>
-              <h3>連絡先</h3>
+              <h3>お問い合わせ</h3>
               <ContactInfo>
                 <span>
-                  📧 contact@example.com
-                </span>
-                <span>
-                  📍 東京, 日本
+                  💬 フォームよりご連絡ください
                 </span>
               </ContactInfo>
             </FooterSection>
