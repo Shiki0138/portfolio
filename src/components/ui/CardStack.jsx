@@ -10,12 +10,12 @@ const Container = styled.div`
   max-width: 400px;
   margin: 0 auto 60px;
   
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     height: 350px;
     max-width: 350px;
   }
   
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     height: 300px;
     max-width: 300px;
   }
@@ -34,7 +34,7 @@ const CardWrapper = styled(animated.div)`
 `;
 
 const Card = styled.div`
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.neutral.white};
   border-radius: ${({ theme }) => theme.borderRadius.xl};
   box-shadow: ${({ theme }) => theme.shadows.lg};
   padding: ${({ theme }) => theme.spacing.xl};
