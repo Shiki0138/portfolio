@@ -29,7 +29,7 @@ export const projects = [
     id: 2,
     title: 'Eコマースサイト',
     description: 'モダンなオンラインショッピング体験を提供するEコマースプラットフォーム',
-    image: 'https://via.placeholder.com/600x400/6C63FF/FFFFFF?text=E-commerce+Site',
+    image: '/assets/images/placeholder-ecommerce.svg',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     links: {
       live: 'https://example-ecommerce.com',
@@ -54,7 +54,7 @@ export const projects = [
     id: 2,
     title: 'タスク管理アプリ',
     description: 'チームのコラボレーションを促進するモダンなタスク管理アプリケーション',
-    image: 'https://via.placeholder.com/600x400/FF6584/FFFFFF?text=Task+Manager',
+    image: '/assets/images/placeholder-task.svg',
     tags: ['Vue.js', 'Firebase', 'Vuetify'],
     links: {
       live: 'https://example-taskmanager.com',
@@ -79,7 +79,7 @@ export const projects = [
     id: 3,
     title: 'ポートフォリオサイト',
     description: '個人の作品を魅力的に展示するアニメーション豊富なポートフォリオサイト',
-    image: 'https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Portfolio+Site',
+    image: '/assets/images/placeholder-portfolio.svg',
     tags: ['React', 'Styled Components', 'React Spring'],
     links: {
       live: 'https://example-portfolio.com',
@@ -104,7 +104,7 @@ export const projects = [
     id: 4,
     title: '天気予報アプリ',
     description: '美しいUIと詳細な気象情報を提供する天気予報アプリケーション',
-    image: 'https://via.placeholder.com/600x400/FF9800/FFFFFF?text=Weather+App',
+    image: '/assets/images/placeholder-weather.svg',
     tags: ['JavaScript', 'Weather API', 'Chart.js'],
     links: {
       live: 'https://example-weather.com',
@@ -129,7 +129,7 @@ export const projects = [
     id: 5,
     title: 'ブログプラットフォーム',
     description: 'MarkdownサポートとSEO最適化を備えたモダンなブログプラットフォーム',
-    image: 'https://via.placeholder.com/600x400/9C27B0/FFFFFF?text=Blog+Platform',
+    image: '/assets/images/placeholder-blog.svg',
     tags: ['Next.js', 'MDX', 'Tailwind CSS'],
     links: {
       live: 'https://example-blog.com',
@@ -154,7 +154,7 @@ export const projects = [
     id: 6,
     title: 'チャットアプリケーション',
     description: 'Socket.ioを使用したリアルタイムチャットアプリケーション',
-    image: 'https://via.placeholder.com/600x400/2196F3/FFFFFF?text=Chat+App',
+    image: '/assets/images/placeholder-chat.svg',
     tags: ['Socket.io', 'Express', 'MongoDB'],
     links: {
       live: 'https://example-chat.com',

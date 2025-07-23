@@ -1,0 +1,9 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#FF9800" opacity="0.1"/>
+  <rect x="0" y="0" width="600" height="400" fill="none" stroke="#FF9800" stroke-width="2"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="24" fill="#FF9800">
+    天気予報アプリ
+  </text>
+  <circle cx="300" cy="170" r="40" fill="#FF9800" opacity="0.3"/>
+  <path d="M300 130 L300 110 M330 140 L345 125 M340 170 L360 170 M330 200 L345 215 M300 210 L300 230 M270 200 L255 215 M260 170 L240 170 M270 140 L255 125" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+</svg>

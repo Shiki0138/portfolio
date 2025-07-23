@@ -1,0 +1,10 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#6C63FF" opacity="0.1"/>
+  <rect x="0" y="0" width="600" height="400" fill="none" stroke="#6C63FF" stroke-width="2"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="24" fill="#6C63FF">
+    Eコマースサイト
+  </text>
+  <path d="M250 180 L350 180 L360 200 L240 200 Z" fill="#6C63FF" opacity="0.3"/>
+  <circle cx="260" cy="210" r="5" fill="#6C63FF"/>
+  <circle cx="340" cy="210" r="5" fill="#6C63FF"/>
+</svg>
