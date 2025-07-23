@@ -248,7 +248,7 @@ const Contact = () => {
     
     try {
       // Google Apps Scriptエンドポイントに送信
-      const response = await fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyt3s-muLBQquq1LL2g5HZmgQDG_vSSv3WjH5L2oIs8WoHRj-EcwjTLvVobJMdkwDjf/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
