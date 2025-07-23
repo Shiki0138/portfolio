@@ -31,30 +31,30 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: ${props => props.theme.typography.fontSize['5xl']};
-    @media ${devices.tablet} {
+    @media (max-width: 768px) {
       font-size: ${props => props.theme.typography.fontSize['4xl']};
     }
-    @media ${devices.mobile} {
+    @media (max-width: 576px) {
       font-size: ${props => props.theme.typography.fontSize['3xl']};
     }
   }
 
   h2 {
     font-size: ${props => props.theme.typography.fontSize['4xl']};
-    @media ${devices.tablet} {
+    @media (max-width: 768px) {
       font-size: ${props => props.theme.typography.fontSize['3xl']};
     }
-    @media ${devices.mobile} {
+    @media (max-width: 576px) {
       font-size: ${props => props.theme.typography.fontSize['2xl']};
     }
   }
 
   h3 {
     font-size: ${props => props.theme.typography.fontSize['3xl']};
-    @media ${devices.tablet} {
+    @media (max-width: 768px) {
       font-size: ${props => props.theme.typography.fontSize['2xl']};
     }
-    @media ${devices.mobile} {
+    @media (max-width: 576px) {
       font-size: ${props => props.theme.typography.fontSize['xl']};
     }
   }
@@ -125,7 +125,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     padding: 0 ${props => props.theme.spacing.lg};
     
-    @media ${devices.tablet} {
+    @media (max-width: 768px) {
       padding: 0 ${props => props.theme.spacing.md};
     }
   }
@@ -133,7 +133,7 @@ export const GlobalStyles = createGlobalStyle`
   .section {
     padding: ${props => props.theme.spacing['3xl']} 0;
     
-    @media ${devices.tablet} {
+    @media (max-width: 768px) {
       padding: ${props => props.theme.spacing['2xl']} 0;
     }
   }

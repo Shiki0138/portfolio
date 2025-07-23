@@ -52,7 +52,7 @@ const Nav = styled.nav`
   align-items: center;
   gap: ${props => props.theme.spacing.xl};
   
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: 768px) {
     display: ${props => props.$isOpen ? 'flex' : 'none'};
     position: absolute;
     top: 100%;
@@ -63,6 +63,7 @@ const Nav = styled.nav`
     padding: ${props => props.theme.spacing.lg};
     box-shadow: ${props => props.theme.shadows.md};
     gap: ${props => props.theme.spacing.md};
+    z-index: 1000;
   }
 `;
 
@@ -102,7 +103,7 @@ const MobileMenuButton = styled.button`
   cursor: pointer;
   padding: ${props => props.theme.spacing.xs};
   
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: 768px) {
     display: flex;
   }
   

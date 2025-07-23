@@ -16,6 +16,12 @@ const Overlay = styled(animated.div)`
   align-items: center;
   justify-content: center;
   padding: ${props => props.theme.spacing.lg};
+  
+  @media (max-width: 768px) {
+    padding: ${props => props.theme.spacing.md};
+    align-items: flex-start;
+    padding-top: ${props => props.theme.spacing.xl};
+  }
 `;
 
 const ModalContainer = styled(animated.div)`

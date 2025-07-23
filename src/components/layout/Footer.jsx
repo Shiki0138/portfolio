@@ -24,7 +24,7 @@ const FooterTop = styled.div`
   gap: ${props => props.theme.spacing['2xl']};
   margin-bottom: ${props => props.theme.spacing['2xl']};
   
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: ${props => props.theme.spacing.xl};
   }
@@ -103,10 +103,10 @@ const FooterBottom = styled.div`
   padding-top: ${props => props.theme.spacing.lg};
   border-top: 1px solid ${props => props.theme.colors.neutral.gray};
   display: flex;
-  justify-content: between;
+  justify-content: center;
   align-items: center;
   
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: ${props => props.theme.spacing.md};
     text-align: center;

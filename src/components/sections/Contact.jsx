@@ -49,7 +49,7 @@ const ContactContent = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: ${props => props.theme.spacing['3xl']};
   
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: ${props => props.theme.spacing['2xl']};
   }

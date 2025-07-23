@@ -95,9 +95,15 @@ const CTAButtons = styled.div`
   justify-content: center;
   margin-bottom: ${props => props.theme.spacing['3xl']};
   
-  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+  @media (max-width: 576px) {
     flex-direction: column;
     align-items: center;
+    gap: ${props => props.theme.spacing.sm};
+    
+    button {
+      width: 100%;
+      max-width: 280px;
+    }
   }
 `;
 

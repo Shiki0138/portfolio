@@ -49,7 +49,12 @@ const ProjectGrid = styled.div`
   gap: ${props => props.theme.spacing.xl};
   margin-bottom: ${props => props.theme.spacing['2xl']};
   
-  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: ${props => props.theme.spacing.lg};
+  }
+  
+  @media (max-width: 576px) {
     grid-template-columns: 1fr;
     gap: ${props => props.theme.spacing.lg};
   }
