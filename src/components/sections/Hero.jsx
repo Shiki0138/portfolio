@@ -223,7 +223,7 @@ const Hero = () => {
         <FadeIn delay={400}>
           <Subtitle>
             <TypewriterEffect 
-              text="Webデザイナー & フロントエンド開発者"
+              text="マーケター & 生成AIプロンプトエンジニア"
               speed={80}
               delay={800}
             />
@@ -232,9 +232,10 @@ const Hero = () => {
         
         <FadeIn delay={1500}>
           <Description>
-            モダンで魅力的なウェブ体験を創造します。
-            ユーザー中心の思考で、美しく機能的なデジタルソリューションを提供し、
-            あなたのビジョンを現実に変えるお手伝いをします。
+            マーケティングコンサルタント×プログラム初心者が、
+            AIを活用して様々なDXツールをリリース。
+            従来の枠を超えた新しいデジタルソリューションで、
+            ビジネスの可能性を広げます。
           </Description>
         </FadeIn>
         
@@ -256,10 +257,6 @@ const Hero = () => {
             </Button>
           </CTAButtons>
         </FadeIn>
-        
-        <ScrollIndicator onClick={scrollToProjects}>
-          <span>スクロール</span>
-        </ScrollIndicator>
       </ContentContainer>
     </HeroContainer>
   );

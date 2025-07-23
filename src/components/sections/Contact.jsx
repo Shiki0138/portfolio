@@ -246,17 +246,36 @@ const Contact = () => {
     
     setIsSubmitting(true);
     
-    // フォーム送信のシミュレーション
-    setTimeout(() => {
+    try {
+      // Google Apps Scriptエンドポイントに送信
+      const response = await fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          timestamp: new Date().toISOString()
+        })
+      });
+      
       setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', message: '' });
       
-      // 成功メッセージを3秒後に隠す
+      // 成功メッセージを5秒後に隐す
       setTimeout(() => {
         setIsSubmitted(false);
-      }, 3000);
-    }, 1000);
+      }, 5000);
+      
+    } catch (error) {
+      console.error('送信エラー:', error);
+      setIsSubmitting(false);
+      setErrors({ submit: '送信に失敗しました。しばらく後でもう一度お試しください。' });
+    }
   };
 
   return (
@@ -277,6 +296,19 @@ const Contact = () => {
                 <SuccessMessage>
                   メッセージを送信しました！ありがとうございます。
                 </SuccessMessage>
+              )}
+              
+              {errors.submit && (
+                <ErrorMessage style={{ 
+                  display: 'block', 
+                  textAlign: 'center', 
+                  marginBottom: '1rem',
+                  padding: '0.5rem',
+                  backgroundColor: '#F4433620',
+                  borderRadius: '4px'
+                }}>
+                  {errors.submit}
+                </ErrorMessage>
               )}
               
               <FormGroup>
@@ -337,11 +369,6 @@ const Contact = () => {
                 <InfoText>contact@example.com</InfoText>
               </InfoCard>
               
-              <InfoCard>
-                <InfoIcon>📱</InfoIcon>
-                <InfoTitle>電話</InfoTitle>
-                <InfoText>+81 90-0000-0000</InfoText>
-              </InfoCard>
               
               <InfoCard>
                 <InfoIcon>📍</InfoIcon>

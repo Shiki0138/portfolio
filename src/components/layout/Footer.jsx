@@ -137,8 +137,10 @@ const Footer = () => {
             <FooterSection>
               <h3>Portfolio</h3>
               <p>
-                モダンで魅力的なウェブ体験を創造するWebデザイナー&フロントエンド開発者です。
-                ユーザー中心の思考で、美しく機能的なデジタルソリューションを提供します。
+                マーケティングコンサルタント×プログラム初心者が、
+                AIを活用して様々なDXツールをリリース。
+                従来の枠を超えた新しいデジタルソリューションで、
+                ビジネスの可能性を広げます。
               </p>
               <SocialLinks>
                 <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -179,9 +181,6 @@ const Footer = () => {
               <ContactInfo>
                 <span>
                   📧 contact@example.com
-                </span>
-                <span>
-                  📱 +81 90-0000-0000
                 </span>
                 <span>
                   📍 東京, 日本

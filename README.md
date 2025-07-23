@@ -68,6 +68,11 @@ src/
 ### コンタクト情報の変更
 `src/components/sections/Contact.jsx` と `src/components/layout/Footer.jsx` で連絡先情報を更新してください。
 
+### お問い合わせフォームの設定
+お問い合わせフォームをGoogle Sheetsに連携するには：
+1. `google-apps-script-setup.md` の手順に従ってGoogle Apps Scriptを設定
+2. `src/components/sections/Contact.jsx` の `YOUR_SCRIPT_ID` を実際のスクリプトIDに置き換え
+
 ## 🎯 主要コンポーネント
 
 ### Hero セクション
