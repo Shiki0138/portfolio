@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: '見積もり支援システム (Garden DX System)',
     description: '造園事業者向けの統合業務管理システム。見積書作成から工程管理、予算管理、請求書作成まで一元化。※デモモードのため実際の使用は不可',
-    image: 'https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Garden+DX+System',
+    image: '/assets/images/projects/garden-dx-dashboard.jpg',
     tags: ['React', 'Next.js', 'TypeScript', 'Supabase'],
     links: {
       live: 'https://garden-dx-system-git-main-shikis-projects-6e27447a.vercel.app/',
