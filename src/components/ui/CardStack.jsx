@@ -63,15 +63,15 @@ const CardHeader = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: ${({ theme }) => theme.typography.sizes['2xl']};
-  font-weight: ${({ theme }) => theme.typography.weights.bold};
-  color: ${({ theme }) => theme.colors.neutral[900]};
+  font-size: ${({ theme }) => theme.typography.fontSize['2xl']};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+  color: ${({ theme }) => theme.colors.neutral.black};
   margin-bottom: ${({ theme }) => theme.spacing.md};
 `;
 
 const CardDescription = styled.p`
-  font-size: ${({ theme }) => theme.typography.sizes.base};
-  color: ${({ theme }) => theme.colors.neutral[600]};
+  font-size: ${({ theme }) => theme.typography.fontSize.md};
+  color: ${({ theme }) => theme.colors.neutral.darkGray};
   line-height: 1.6;
   margin-bottom: ${({ theme }) => theme.spacing.lg};
 `;
@@ -84,12 +84,12 @@ const TagContainer = styled.div`
 `;
 
 const Tag = styled.span`
-  background: ${({ theme }) => theme.colors.primary[100]};
-  color: ${({ theme }) => theme.colors.primary[700]};
+  background: ${({ theme }) => theme.colors.primary.light};
+  color: ${({ theme }) => theme.colors.neutral.white};
   padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.sm}`};
   border-radius: ${({ theme }) => theme.borderRadius.full};
-  font-size: ${({ theme }) => theme.typography.sizes.sm};
-  font-weight: ${({ theme }) => theme.typography.weights.medium};
+  font-size: ${({ theme }) => theme.typography.fontSize.sm};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
 `;
 
 const CardFooter = styled.div`
@@ -99,18 +99,18 @@ const CardFooter = styled.div`
 `;
 
 const ViewButton = styled.button`
-  background: ${({ theme }) => theme.colors.primary[600]};
-  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.primary.main};
+  color: ${({ theme }) => theme.colors.neutral.white};
   border: none;
   padding: ${({ theme }) => `${theme.spacing.sm} ${theme.spacing.lg}`};
   border-radius: ${({ theme }) => theme.borderRadius.md};
-  font-size: ${({ theme }) => theme.typography.sizes.base};
-  font-weight: ${({ theme }) => theme.typography.weights.medium};
+  font-size: ${({ theme }) => theme.typography.fontSize.md};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
   cursor: pointer;
   transition: all 0.3s ease;
   
   &:hover {
-    background: ${({ theme }) => theme.colors.primary[700]};
+    background: ${({ theme }) => theme.colors.primary.dark};
     transform: translateY(-2px);
   }
 `;
@@ -127,7 +127,7 @@ const Dot = styled.div`
   height: 8px;
   border-radius: 50%;
   background: ${({ active, theme }) => 
-    active ? theme.colors.primary[600] : theme.colors.neutral[300]};
+    active ? theme.colors.primary.main : theme.colors.neutral.lightGray};
   transition: background 0.3s ease;
 `;
 
