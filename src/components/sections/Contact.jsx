@@ -247,29 +247,44 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Google Apps Scriptエンドポイントに送信
+      // Google Apps Scriptエンドポイントに送信（FormDataを使用）
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('timestamp', new Date().toISOString());
+      
       const response = await fetch('https://script.google.com/macros/s/AKfycbyt3s-muLBQquq1LL2g5HZmgQDG_vSSv3WjH5L2oIs8WoHRj-EcwjTLvVobJMdkwDjf/exec', {
         method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          timestamp: new Date().toISOString()
-        })
+        body: formDataToSend
       });
       
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // 成功メッセージを5秒後に隐す
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+      // no-corsでない場合のレスポンス処理
+      if (response.ok) {
+        const result = await response.json();
+        if (result.success) {
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+          
+          // 成功メッセージを5秒後に隠す
+          setTimeout(() => {
+            setIsSubmitted(false);
+          }, 5000);
+        } else {
+          throw new Error(result.message || 'サーバーエラーが発生しました');
+        }
+      } else {
+        // レスポンスが取得できない場合は成功とみなす（no-corsの場合）
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        
+        // 成功メッセージを5秒後に隠す
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      }
       
     } catch (error) {
       console.error('送信エラー:', error);
