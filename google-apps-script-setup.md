@@ -1,12 +1,6 @@
-# Google Apps Script セットアップガイド（修正版）
+# Google Apps Script セットアップガイド
 
 お問い合わせフォームをGoogle Sheetsに保存し、メール通知を送信するための設定手順です。
-
-## 🚨 エラー修正版
-
-以下のエラーを修正しました：
-- `TypeError: Cannot read properties of undefined (reading 'postData')`
-- FormDataとパラメータの両方に対応
 
 ## 1. Google Sheetsの準備
 
@@ -24,7 +18,7 @@
 ## 2. Google Apps Scriptの設定
 
 1. Google Sheetsの「拡張機能」→「Apps Script」をクリック
-2. デフォルトのコードを削除し、**修正版のコードを貼り付け**：
+2. デフォルトのコードを削除し、以下のコードを貼り付け：
 
 ```javascript
 function doPost(e) {
@@ -106,7 +100,7 @@ ${new Date(data.timestamp).toLocaleString('ja-JP')}
 `src/components/sections/Contact.jsx`の以下の部分を更新：
 
 ```javascript
-const response = await fetch('YOUR_WEB_APP_URL_HERE', {
+const response = await fetch('https://script.google.com/macros/s/AKfycbyt3s-muLBQquq1LL2g5HZmgQDG_vSSv3WjH5L2oIs8WoHRj-EcwjTLvVobJMdkwDjf/exec', {
 ```
 
 ## 6. 権限の許可

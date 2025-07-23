@@ -5,6 +5,7 @@ import FadeIn from '../animations/FadeIn';
 import Card from '../ui/Card';
 import Modal from '../ui/Modal';
 import Button from '../ui/Button';
+import CardStack from '../ui/CardStack';
 import { projects } from '../../data/projects';
 
 const ProjectsContainer = styled.section`
@@ -157,6 +158,13 @@ const Projects = () => {
             それぞれのプロジェクトで新しい技術に挑戦し、
             ユーザー体験の向上を追求してきました。
           </SectionSubtitle>
+        </FadeIn>
+
+        <FadeIn delay={300}>
+          <CardStack 
+            projects={projects} 
+            onViewProject={openModal}
+          />
         </FadeIn>
 
         <ProjectGrid>

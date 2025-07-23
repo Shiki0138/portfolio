@@ -6,7 +6,7 @@ export const projects = [
     image: 'https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Garden+DX+System',
     tags: ['React', 'Next.js', 'TypeScript', 'Supabase'],
     links: {
-      live: 'https://garden-dx-system.vercel.app/',
+      live: 'https://garden-dx-system-git-main-shikis-projects-6e27447a.vercel.app/',
       github: null
     },
     details: {
