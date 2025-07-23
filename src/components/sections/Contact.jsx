@@ -254,7 +254,7 @@ const Contact = () => {
       formDataToSend.append('message', formData.message);
       formDataToSend.append('timestamp', new Date().toISOString());
       
-      const response = await fetch('https://script.google.com/macros/s/AKfycbyt3s-muLBQquq1LL2g5HZmgQDG_vSSv3WjH5L2oIs8WoHRj-EcwjTLvVobJMdkwDjf/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyCec-6Q6Jv9-qM5MP6dI0utek8Bt4mxre3nbRvGcD3rTwbxOrLzT7f4j6ABWEGIE0q/exec', {
         method: 'POST',
         body: formDataToSend
       });
