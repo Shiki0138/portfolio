@@ -379,33 +379,9 @@ const Contact = () => {
           <SlideIn from="right">
             <ContactInfo>
               <InfoCard>
-                <InfoIcon>📧</InfoIcon>
-                <InfoTitle>メール</InfoTitle>
-                <InfoText>contact@example.com</InfoText>
-              </InfoCard>
-              
-              
-              <InfoCard>
-                <InfoIcon>📍</InfoIcon>
-                <InfoTitle>所在地</InfoTitle>
-                <InfoText>東京, 日本</InfoText>
-              </InfoCard>
-              
-              <InfoCard>
-                <InfoIcon>🌐</InfoIcon>
-                <InfoTitle>SNS</InfoTitle>
-                <InfoText>お気軽にフォローしてください</InfoText>
-                <SocialLinks>
-                  <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">
-                    📂
-                  </SocialLink>
-                  <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    💼
-                  </SocialLink>
-                  <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                    🐦
-                  </SocialLink>
-                </SocialLinks>
+                <InfoIcon>💬</InfoIcon>
+                <InfoTitle>お問い合わせ</InfoTitle>
+                <InfoText>左側のフォームよりお気軽にご連絡ください。24時間以内にご返信いたします。</InfoText>
               </InfoCard>
             </ContactInfo>
           </SlideIn>
