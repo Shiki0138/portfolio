@@ -1,6 +1,32 @@
 export const projects = [
   {
     id: 1,
+    title: '見積もり支援システム (Garden DX System)',
+    description: '造園事業者向けの統合業務管理システム。見積書作成から工程管理、予算管理、請求書作成まで一元化。※デモモードのため実際の使用は不可',
+    image: 'https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Garden+DX+System',
+    tags: ['React', 'Next.js', 'TypeScript', 'Supabase'],
+    links: {
+      live: 'https://garden-dx-system.vercel.app/',
+      github: null
+    },
+    details: {
+      role: 'フルスタック開発者',
+      duration: '開発中',
+      technologies: ['React', 'Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Chart.js'],
+      challenges: '造園業界特有の複雑な見積もり体系と工程管理の統合',
+      solutions: 'ガントチャート形式の工程表と連動した予算管理システムを実装し、業務フローを効率化',
+      features: [
+        '見積書作成・管理機能',
+        'ガントチャート形式の工程表',
+        '予算管理・進捗追跡',
+        '請求書自動生成',
+        '将来的な拡張機能対応設計',
+        '※現在はデモモードのみ提供'
+      ]
+    }
+  },
+  {
+    id: 2,
     title: 'Eコマースサイト',
     description: 'モダンなオンラインショッピング体験を提供するEコマースプラットフォーム',
     image: 'https://via.placeholder.com/600x400/6C63FF/FFFFFF?text=E-commerce+Site',
