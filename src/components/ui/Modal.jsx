@@ -18,9 +18,9 @@ const Overlay = styled(animated.div)`
   padding: ${props => props.theme.spacing.lg};
   
   @media (max-width: 768px) {
-    padding: ${props => props.theme.spacing.md};
-    align-items: flex-start;
-    padding-top: ${props => props.theme.spacing.xl};
+    padding: ${props => props.theme.spacing.sm};
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -28,11 +28,22 @@ const ModalContainer = styled(animated.div)`
   background-color: ${props => props.theme.colors.neutral.white};
   border-radius: ${props => props.theme.borderRadius.lg};
   box-shadow: ${props => props.theme.shadows.xl};
-  max-width: ${props => props.$maxWidth || '500px'};
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
+  max-width: ${props => props.$maxWidth || '800px'};
+  width: 90%;
+  max-height: 85vh;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    max-height: 90vh;
+    max-width: 100%;
+  }
 `;
 
 const ModalHeader = styled.div`
@@ -73,6 +84,12 @@ const CloseButton = styled.button`
 
 const ModalBody = styled.div`
   padding: ${props => props.theme.spacing.lg};
+  overflow-y: auto;
+  flex: 1;
+  
+  @media (max-width: 768px) {
+    padding: ${props => props.theme.spacing.md};
+  }
 `;
 
 const ModalFooter = styled.div`
@@ -94,9 +111,9 @@ const Modal = ({
   showCloseButton = true
 }) => {
   const transition = useTransition(isOpen, {
-    from: { opacity: 0, transform: 'translate(-50%, -50%) scale(0.8)' },
-    enter: { opacity: 1, transform: 'translate(-50%, -50%) scale(1)' },
-    leave: { opacity: 0, transform: 'translate(-50%, -50%) scale(0.8)' },
+    from: { opacity: 0, transform: 'scale(0.8)' },
+    enter: { opacity: 1, transform: 'scale(1)' },
+    leave: { opacity: 0, transform: 'scale(0.8)' },
     config: { tension: 300, friction: 30 }
   });
 
@@ -137,7 +154,7 @@ const Modal = ({
         <Overlay style={{ opacity: style.opacity }} onClick={handleOverlayClick}>
           <ModalContainer 
             style={{ 
-              transform: style.transform,
+              transform: `translate(-50%, -50%) ${style.transform}`,
               opacity: style.opacity 
             }}
             $maxWidth={maxWidth}

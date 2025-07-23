@@ -18,6 +18,11 @@ const HeroContainer = styled.section`
     ${props => props.theme.colors.secondary.main}10 100%
   );
   overflow: hidden;
+  padding-top: ${props => props.theme.spacing.xl};
+  
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    padding-top: ${props => props.theme.spacing['2xl']};
+  }
 `;
 
 const BackgroundElements = styled.div`
@@ -55,13 +60,16 @@ const MainTitle = styled.h1`
   font-weight: ${props => props.theme.typography.fontWeight.bold};
   color: ${props => props.theme.colors.neutral.black};
   margin-bottom: ${props => props.theme.spacing.md};
+  line-height: 1.2;
   
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     font-size: ${props => props.theme.typography.fontSize['4xl']};
+    line-height: 1.3;
   }
   
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
     font-size: ${props => props.theme.typography.fontSize['3xl']};
+    line-height: 1.4;
   }
 `;
 
