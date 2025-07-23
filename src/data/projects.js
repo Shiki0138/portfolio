@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: '見積もり支援システム (Garden DX System)',
     description: '造園事業者向けの統合業務管理システム。見積書作成から工程管理、予算管理、請求書作成まで一元化。※デモモードのため実際の使用は不可',
-    image: '/assets/images/projects/garden-dx-dashboard-new.jpg',
+    image: `${import.meta.env.BASE_URL}assets/images/projects/garden-dx-dashboard-new.jpg`,
     tags: ['React', 'Next.js', 'TypeScript', 'Supabase'],
     links: {
       live: 'https://garden-dx-system-git-main-shikis-projects-6e27447a.vercel.app/',
@@ -29,7 +29,7 @@ export const projects = [
     id: 2,
     title: 'Eコマースサイト',
     description: 'モダンなオンラインショッピング体験を提供するEコマースプラットフォーム',
-    image: '/assets/images/placeholder-ecommerce.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-ecommerce.svg`,
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     links: {
       live: 'https://example-ecommerce.com',
@@ -54,7 +54,7 @@ export const projects = [
     id: 2,
     title: 'タスク管理アプリ',
     description: 'チームのコラボレーションを促進するモダンなタスク管理アプリケーション',
-    image: '/assets/images/placeholder-task.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-task.svg`,
     tags: ['Vue.js', 'Firebase', 'Vuetify'],
     links: {
       live: 'https://example-taskmanager.com',
@@ -79,7 +79,7 @@ export const projects = [
     id: 3,
     title: 'ポートフォリオサイト',
     description: '個人の作品を魅力的に展示するアニメーション豊富なポートフォリオサイト',
-    image: '/assets/images/placeholder-portfolio.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-portfolio.svg`,
     tags: ['React', 'Styled Components', 'React Spring'],
     links: {
       live: 'https://example-portfolio.com',
@@ -104,7 +104,7 @@ export const projects = [
     id: 4,
     title: '天気予報アプリ',
     description: '美しいUIと詳細な気象情報を提供する天気予報アプリケーション',
-    image: '/assets/images/placeholder-weather.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-weather.svg`,
     tags: ['JavaScript', 'Weather API', 'Chart.js'],
     links: {
       live: 'https://example-weather.com',
@@ -129,7 +129,7 @@ export const projects = [
     id: 5,
     title: 'ブログプラットフォーム',
     description: 'MarkdownサポートとSEO最適化を備えたモダンなブログプラットフォーム',
-    image: '/assets/images/placeholder-blog.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-blog.svg`,
     tags: ['Next.js', 'MDX', 'Tailwind CSS'],
     links: {
       live: 'https://example-blog.com',
@@ -154,7 +154,7 @@ export const projects = [
     id: 6,
     title: 'チャットアプリケーション',
     description: 'Socket.ioを使用したリアルタイムチャットアプリケーション',
-    image: '/assets/images/placeholder-chat.svg',
+    image: `${import.meta.env.BASE_URL}assets/images/placeholder-chat.svg`,
     tags: ['Socket.io', 'Express', 'MongoDB'],
     links: {
       live: 'https://example-chat.com',
