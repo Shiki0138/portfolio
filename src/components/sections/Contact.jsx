@@ -11,6 +11,8 @@ const ContactContainer = styled.section`
     ${props => props.theme.colors.primary.main}05 0%, 
     ${props => props.theme.colors.secondary.main}05 100%
   );
+  width: 100%;
+  overflow-x: hidden;
 `;
 
 const Container = styled.div`

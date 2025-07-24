@@ -7,11 +7,16 @@ const LayoutContainer = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 `;
 
 const MainContent = styled.main`
   flex: 1;
   padding-top: 80px; /* ヘッダーの高さ分 */
+  width: 100%;
+  overflow-x: hidden;
   
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 70px;

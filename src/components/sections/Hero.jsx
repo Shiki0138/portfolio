@@ -19,6 +19,8 @@ const HeroContainer = styled.section`
   );
   overflow: hidden;
   padding-top: ${props => props.theme.spacing.xl};
+  width: 100%;
+  max-width: 100vw;
   
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     padding-top: ${props => props.theme.spacing['2xl']};
@@ -32,6 +34,7 @@ const BackgroundElements = styled.div`
   width: 100%;
   height: 100%;
   z-index: 1;
+  overflow: hidden;
 `;
 
 const FloatingShape = styled(animated.div)`

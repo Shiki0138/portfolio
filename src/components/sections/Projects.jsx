@@ -11,6 +11,8 @@ import { projects } from '../../data/projects';
 const ProjectsContainer = styled.section`
   padding: ${props => props.theme.spacing['3xl']} 0;
   background-color: ${props => props.theme.colors.neutral.lightGray}20;
+  width: 100%;
+  overflow-x: hidden;
 `;
 
 const Container = styled.div`
