@@ -8,6 +8,7 @@ import LoadingSpinner from './components/ui/LoadingSpinner';
 // コード分割による最適化
 const Hero = React.lazy(() => import('./components/sections/Hero'));
 const Projects = React.lazy(() => import('./components/sections/Projects'));
+const Subsidies = React.lazy(() => import('./components/sections/Subsidies'));
 const Contact = React.lazy(() => import('./components/sections/Contact'));
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         </Suspense>
         <Suspense fallback={<LoadingSpinner text="プロジェクトを読み込み中..." />}>
           <Projects />
+        </Suspense>
+        <Suspense fallback={<LoadingSpinner text="補助金情報を読み込み中..." />}>
+          <Subsidies />
         </Suspense>
         <Suspense fallback={<LoadingSpinner text="お問い合わせフォームを読み込み中..." />}>
           <Contact />

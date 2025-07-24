@@ -17,9 +17,14 @@ const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 ${props => props.theme.spacing.lg};
+  width: 100%;
   
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     padding: 0 ${props => props.theme.spacing.md};
+  }
+  
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    padding: 0 ${props => props.theme.spacing.sm};
   }
 `;
 
@@ -49,6 +54,7 @@ const ProjectGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: ${props => props.theme.spacing.xl};
   margin-bottom: ${props => props.theme.spacing['2xl']};
+  justify-content: center;
   
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -58,6 +64,7 @@ const ProjectGrid = styled.div`
   @media (max-width: 576px) {
     grid-template-columns: 1fr;
     gap: ${props => props.theme.spacing.lg};
+    padding: 0;
   }
 `;
 

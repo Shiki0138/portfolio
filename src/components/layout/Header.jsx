@@ -175,8 +175,8 @@ const Header = () => {
           <NavLink onClick={() => scrollToSection('projects')}>
             Projects
           </NavLink>
-          <NavLink onClick={() => scrollToSection('about')}>
-            About
+          <NavLink onClick={() => scrollToSection('subsidies')}>
+            補助金
           </NavLink>
           <NavLink onClick={() => scrollToSection('contact')}>
             Contact
