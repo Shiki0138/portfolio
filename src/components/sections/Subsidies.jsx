@@ -134,6 +134,28 @@ const CTADescription = styled.p`
   margin-right: auto;
 `;
 
+const Notice = styled.div`
+  background: ${props => props.theme.colors.neutral.lightGray}40;
+  border: 1px solid ${props => props.theme.colors.neutral.lightGray};
+  border-radius: ${props => props.theme.borderRadius.md};
+  padding: ${props => props.theme.spacing.lg};
+  margin-top: ${props => props.theme.spacing['2xl']};
+  
+  h4 {
+    font-size: ${props => props.theme.typography.fontSize.md};
+    font-weight: ${props => props.theme.typography.fontWeight.bold};
+    color: ${props => props.theme.colors.neutral.darkGray};
+    margin-bottom: ${props => props.theme.spacing.sm};
+  }
+  
+  p {
+    font-size: ${props => props.theme.typography.fontSize.sm};
+    color: ${props => props.theme.colors.neutral.darkGray};
+    line-height: 1.6;
+    margin-bottom: ${props => props.theme.spacing.xs};
+  }
+`;
+
 const Subsidies = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -146,10 +168,10 @@ const Subsidies = () => {
     <SubsidiesContainer id="subsidies">
       <Container>
         <FadeIn>
-          <SectionTitle>補助金・助成金サポート</SectionTitle>
+          <SectionTitle>補助金活用のご提案</SectionTitle>
           <SectionSubtitle>
-            システム開発と合わせて、各種補助金・助成金の申請サポートも承ります。
-            デジタル化推進による業務効率化を、資金面からも支援いたします。
+            システム開発のご相談時に、活用可能な補助金・助成金の情報提供を行っております。
+            お客様の事業に最適な補助金をご紹介し、システム投資の負担軽減をお手伝いします。
           </SectionSubtitle>
         </FadeIn>
 
@@ -164,7 +186,7 @@ const Subsidies = () => {
                 <li>補助金額：最大450万円</li>
                 <li>補助率：1/2以内</li>
                 <li>ソフトウェア費、導入関連費等が対象</li>
-                <li>申請書作成から交付申請まで全面サポート</li>
+                <li>制度の概要や申請の流れをご説明</li>
               </FeatureList>
             </SubsidyCard>
 
@@ -177,7 +199,7 @@ const Subsidies = () => {
                 <li>補助金額：最大1億円</li>
                 <li>補助率：中小企業2/3、中堅企業1/2</li>
                 <li>デジタル化による事業転換が対象</li>
-                <li>事業計画策定から申請まで包括サポート</li>
+                <li>必要書類や申請要件の情報提供</li>
               </FeatureList>
             </SubsidyCard>
 
@@ -190,7 +212,7 @@ const Subsidies = () => {
                 <li>補助金額：最大1,250万円</li>
                 <li>補助率：中小企業1/2、小規模事業者2/3</li>
                 <li>システム開発・導入費用が対象</li>
-                <li>技術的な観点からの申請書類作成支援</li>
+                <li>システム開発内容と補助金要件の整合性確認</li>
               </FeatureList>
             </SubsidyCard>
           </ContentGrid>
@@ -198,20 +220,30 @@ const Subsidies = () => {
 
         <FadeIn delay={400}>
           <CTASection>
-            <CTATitle>補助金申請 + システム開発の一括提案</CTATitle>
+            <CTATitle>補助金を活用したシステム開発のご提案</CTATitle>
             <CTADescription>
-              システム開発の企画段階から補助金申請をセットで提案いたします。
-              資金調達から開発・導入まで、ワンストップでサポートし、
-              お客様の負担を最小限に抑えながらDXを実現します。
+              システム開発のご相談時に、活用可能な補助金制度をご案内いたします。
+              補助金の要件に適合したシステム開発計画をご提案し、
+              投資効果を最大化するお手伝いをいたします。
             </CTADescription>
             <Button 
               variant="primary" 
               size="large"
               onClick={scrollToContact}
             >
-              補助金相談・お問い合わせ
+              補助金活用のご相談
             </Button>
           </CTASection>
+        </FadeIn>
+
+        <FadeIn delay={600}>
+          <Notice>
+            <h4>ご注意事項</h4>
+            <p>※ 当社は補助金に関する情報提供・コンサルティングを行っております。</p>
+            <p>※ 補助金の申請代行業務は行っておりません。申請書類の作成・提出は、お客様ご自身または専門の行政書士・社会保険労務士等にご依頼ください。</p>
+            <p>※ システム開発内容が補助金の要件に適合するかの技術的なアドバイスや、必要書類の情報提供などでお手伝いさせていただきます。</p>
+            <p>※ 補助金の採択を保証するものではありません。</p>
+          </Notice>
         </FadeIn>
       </Container>
     </SubsidiesContainer>
